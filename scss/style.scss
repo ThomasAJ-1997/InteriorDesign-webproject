@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Sedan+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
+
+@import "../scss/variables.scss";
+@import "../scss/animation.scss";
+@import "../scss/opening.scss";
+@import "../scss/hamburgerMenu.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background-color: $color-darkCharcol;
+}
+
+// HEADER & NAVBAR //
+.header-section {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(128, 128, 128, 0.342),
+      rgba(76, 76, 76, 0.578)
+    ),
+    url("../img/photo-5.avif");
+  background-size: cover;
+  background-position: bottom;
+  transition: all 0.3s ease-in;
+  position: relative;
+  animation-fill-mode: backwards;
+}
+
+nav {
+  height: 15vh;
+  background-color: $color-jetBlack;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.heading-primary {
+  @include primaryFontStyle(5rem, $color-verylight);
+}
+
+.header-navbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 20rem;
+}
+
+.header-navbar ul {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  list-style: none;
+}
+
+.header-navbar a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: $color-verylight;
+}
+
+.header-navbar a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header-logo-img {
+  height: 10rem;
+}
+
+.header-introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 4;
+}
+
+.header-text {
+  @include secondaryFontStyle(12rem, $color-verylight);
+  @include animationFeature(animationMoveUp);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 100vw;
+  z-index: 4;
+}
+
+// .secondary-text {
+//   @include secondaryFontStyle(3.5rem, $color-verylight);
+//   @include animationFeature(animationAppear);
+//   animation-delay: 3s;
+//   animation-fill-mode: backwards;
+//   z-index: 4;
+//   text-shadow: 1px;
+// }
+
+.btn-hero:link,
+.btn-hero:visited {
+  display: inline-block;
+  margin-top: 6.4rem;
+  transition: all 0.5s ease-in-out;
+  @include buttonStyles;
+  @include animationFeature(animationAppear);
+  animation-fill-mode: backwards;
+  animation-delay: 3s;
+  z-index: 4;
+}
+
+.btn-hero:hover {
+  text-decoration: underline;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 4.2);
+  background-color: $color-jetBlack;
+  color: $color-verylight;
+}
+
+/////////////////////////////////////////////////
+// OPENING
+.opening {
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening-video {
+  position: relative;
+  height: 80vh;
+  width: 90vw;
+  margin-top: 3.2rem;
+  background-image: url("../video/Corinthia_Malta_Vitality_Suite_Cinemagraph_HD_Jack_Hardy_2020.gif");
+  background-size: cover;
+  background-position: right;
+}
+
+.opening-button {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-opening:link,
+.btn-opening:visited {
+  @include buttonStyles2;
+  transition: all 0.3s ease-out;
+}
+
+.btn-opening:hover {
+  background-color: $color-darkCharcol;
+  color: whitesmoke;
+}
+
+/////////////////////////////////////////////////
+/// TESTIMONIAL SECTION
+
+.testimonials {
+  width: 100%;
+  min-height: 60vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-container {
+  position: relative;
+  width: 100%;
+  min-height: 45rem;
+  background-color: #f5f5f5;
+  margin-bottom: 20rem;
+}
+
+.testimonial-container .testimonial-wrapper {
+  width: 70%;
+  min-height: inherit;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.testimonial-wrapper .testimonial-header .testimonial-header-text {
+  position: relative;
+  @include secondaryFontStyle(3rem, $color-matteBlack);
+}
+
+.testimonial-wrapper .testimonial-header .testimonial-header-text::before {
+  @include fontStyleBefore();
+}
+
+.testimonial-wrapper .testimonial-row {
+  width: 100%;
+  min-height: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-row .testimonial-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial-row .testimonial-item:not(.active) {
+  top: 0;
+  left: -100%;
+}
+
+.testimonial-row .testimonial-item img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  outline: 2px solid $color-darkCharcol;
+  outline-offset: 2px;
+}
+
+.testimonial-row .testimonial-item h3 {
+  @include thirdFontStyle(3rem, $color-darkCharcol);
+}
+
+.testimonial-row .testimonial-item h4 {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.testimonial-row .testimonial-item p {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 10px;
+}
+
+.testimonial-wrapper .testimonial-indicators {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.testimonial-wrapper .testimonial-indicators .dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0px 3px;
+  border: 1.5px solid $color-darkCharcol;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5 ease;
+}
+
+.testimonial-wrapper .testimonial-indicators .active {
+  background-color: #aaa;
+}
+
+////////////////////////////////////////////////////////
+/// ABOUT SECTION
+
+.about-section {
+  width: 100%;
+  min-height: 60vh;
+  margin-top: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-header .about-header-text {
+  position: relative;
+  text-align: center;
+  @include secondaryFontStyle(3rem, $color-matteBlack);
+}
+
+.about-header .about-header-text::before {
+  @include fontStyleBefore();
+}
+
+.about-description {
+  @include fourthFontStyle();
+}
+
+.about-img {
+  position: relative;
+  height: 60vh;
+  width: 83vw;
+  margin-bottom: 4rem;
+  background-image: url("../img/b00d5840-9d75-4e44-a16a-59678dacbd06_Interiordesign2.avif");
+  background-size: cover;
+  background-position: top;
+}
+/////////////////////////////////////////////////////////////
+/// Social Media Section
+.socialmedia-section {
+  width: 100%;
+  height: 60vh;
+  margin-top: 6.4rem;
+  background-color: #f5f5f5;
+  padding-top: 5rem;
+}
+
+.socialmedia-header .socialmedia-header-text {
+  position: relative;
+  text-align: center;
+  margin-bottom: 15rem;
+  @include secondaryFontStyle(3rem, $color-matteBlack);
+}
+
+.socialmedia-header .socialmedia-header-text::before {
+  @include fontStyleBefore();
+}
+
+.socialmedia-description {
+  @include fourthFontStyle();
+  font-style: italic;
+  margin-top: -15rem;
+}
+
+.social-media-imgs {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.social-media-img {
+  width: 90%;
+  height: 20rem;
+  background-size: cover;
+  background-position: top;
+  margin-left: 1.75rem;
+  margin-bottom: 3.2rem;
+  transition: all 0.4s ease;
+}
+
+.social-media-img:hover {
+  transform: scale(1.1);
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.sm-icon {
+  width: 3rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sm-icon:first-child:hover {
+  transform: scale(150%);
+}
+
+///////////////////////////////////////
+/// CONTACT US SECTION
+.contactus-section {
+  width: 100%;
+  height: 60vh;
+}
+
+.contactus-header .contactus-header-text {
+  position: relative;
+  text-align: center;
+  margin-top: 6.4rem;
+  margin-bottom: 3.2rem;
+  @include secondaryFontStyle(3rem, $color-matteBlack);
+}
+
+.contactus-header .contactus-header-text::before {
+  @include fontStyleBefore();
+}
+
+///////////////////////////////////////////////////////
+/// ACCORDIAN SECTION
+.accordian-section {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordian-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rem;
+}
+
+.accordian-box {
+  width: 80%;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid $color-darkCharcol;
+}
+
+.accordian-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  @include secondaryFontStyle(2rem, $color-darkCharcol);
+}
+
+.accordian-heading p {
+  transition: all 0.3s ease;
+}
+
+.accordian-heading p:hover,
+.accordian-heading p:focus {
+  color: $color-greybrick;
+  transform: scale(110%);
+}
+
+.accordian-heading .icon {
+  font-size: 3rem;
+}
+
+.accordian-text ul li {
+  @include listFontStyle(2rem, $color-darkCharcol);
+  list-style: none;
+}
+
+.hidden-box {
+  display: flex;
+  position: relative;
+}
+
+// .map {
+//   max-width: 0rem;
+//   position: absolute;
+//   visibility: hidden;
+// }
+
+.accordian-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s ease-out;
+}
+
+.accordian-text p {
+  font-size: 1.4rem;
+  padding-top: 1rem;
+}
+
+.accordian-box.active .accordian-text {
+  max-height: 100vh;
+  transition: all 1s ease-in-out;
+}
+
+// .map.active .accordian-text {
+//   display: block;
+// }
+
+////////////////////////////////////
+/// SECTION NEWSLETTER
+.section-newsletter {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-heading h3 {
+  @include secondaryFontStyle(2.5rem, $color-darkCharcol);
+}
+
+.newsletter-text {
+  @include listFontStyle(2rem, $color-darkCharcol);
+  text-align: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  margin-bottom: 3.2rem;
+}
+
+.textbox {
+  width: 50rem;
+  padding: 2rem 2rem 2rem 2rem;
+  opacity: 0.5;
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.textbox::placeholder {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.btn-newsletter {
+  @include buttonStyles2();
+  @include secondaryFontStyle(2rem, $color-darkCharcol);
+  padding: 2rem 2rem 2rem 2rem;
+  margin-left: 1rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-newsletter:hover,
+.btn-newsletter:focus {
+  background-color: $color-darkCharcol;
+  color: #f5f5f5;
+}
+
+////////////////////////////////////
+/// FOOTER SECTION
+.section-footer {
+  width: 100%;
+  height: 25vh;
+  background-color: $color-jetBlack;
+}
+
+.footer-heading {
+  @include primaryFontStyle(4rem, $color-verylight);
+  text-align: center;
+  padding-top: 4.8rem;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer-link {
+  @include primaryFontStyle(1.5rem, $color-neutral);
+  margin-top: 3.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-li {
+  text-decoration: none;
+  color: $color-neutral;
+  cursor: pointer;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: $color-verylight;
+  transform: scale(120%);
+}
+
+.footer-copyright {
+  @include primaryFontStyle(1.5rem, $color-neutral);
+  margin-top: 2.4rem;
+  text-align: center;
+}

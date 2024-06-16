@@ -1,0 +1,186 @@
+@mixin animationFeature($moveAnimation) {
+  animation-name: $moveAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animationMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes animationAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animationDisappear {
+  100% {
+    opacity: 0;
+  }
+
+  0% {
+    opacity: 1;
+  }
+}
+
+//////////////////////////////////////////////////
+// Animation
+.cursor {
+  position: fixed;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  z-index: 8;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+  z-index: 8;
+}
+
+.reveal {
+  display: none;
+}
+
+.header-section:hover .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: $color-verylight;
+}
+
+.header-section:hover .cursor2 {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: $color-verylight;
+  opacity: 0.5;
+}
+
+.header-section:hover .cursor2 .reveal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  bottom: 20%;
+  font-size: 1.75rem;
+  font-style: italic;
+  transition: all 0.5s ease-in;
+}
+
+/////////////////////////////////////////////////////
+// VIDEO ANIMATION
+#videoLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0%);
+  min-width: 100%;
+  min-height: 100%;
+  transition: opacity 2s;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+
+.cursorFade {
+  opacity: 0;
+}
+
+.cursor2Fade {
+  animation-name: changeColors;
+  animation-duration: 5s;
+  position: fixed;
+  @keyframes changeColors {
+    0% {
+      background-color: white;
+      width: 8rem;
+      height: 8rem;
+      pointer-events: none;
+      border: 1px solid whitesmoke;
+      border-radius: 50%;
+    }
+    50% {
+      background-color: black;
+      width: 4rem;
+      height: 4rem;
+      pointer-events: none;
+      border: 1px solid whitesmoke;
+      border-radius: 50%;
+    }
+    100% {
+      opacity: 0;
+      width: 0rem;
+      height: 0rem;
+      pointer-events: none;
+      border: 1px solid whitesmoke;
+      border-radius: 50%;
+    }
+  }
+}
+
+.animation-hide {
+  transition: opacity 2s;
+}
+
+///////////////////////////////////////////////////////
+/// Testimonial Animation
+@keyframes next1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes next2 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes prev1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes prev2 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}

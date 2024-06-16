@@ -1,0 +1,93 @@
+// Neutral Colours
+$color-verylight: #fff2de;
+$color-light: #d8caa9;
+$color-medium: #d0ba98;
+$color-dark: #8d8079;
+
+$color-neutral: #ddd6cd;
+$color-brick: #dcb7a5;
+$color-darkbrick: #d0a792;
+$color-greybrick: #7f7d7e;
+
+$color-lightblue: #000072;
+$color-mediumblue: #001861;
+$color-darkblue: #00003f;
+
+$color-darkCharcol: #36454f;
+$color-jetBlack: #343434;
+$color-matteBlack: #28282b;
+$color-onyxBlack: #353935;
+
+@mixin primaryFontStyle($font-size, $font-color) {
+  font-size: $font-size;
+  color: $font-color;
+  font-family: "Sedan SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin secondaryFontStyle($font-size, $font-color) {
+  font-size: $font-size;
+  color: $font-color;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin thirdFontStyle($font-size, $font-color) {
+  font-size: $font-size;
+  color: $font-color;
+  font-style: italic;
+  padding: 0.7rem;
+}
+
+@mixin fourthFontStyle() {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding: 40px 20px 40px 20px;
+  min-width: 50%;
+  text-align: center;
+  margin: 0 12.5rem 0 12.5rem;
+}
+
+@mixin listFontStyle($font-size, $font-color) {
+  font-size: $font-size;
+  color: $font-color;
+  font-style: normal;
+  padding: 0.7rem;
+}
+
+@mixin fontStyleBefore() {
+  content: "";
+  width: 20rem;
+  height: 2px;
+  background-color: $color-darkCharcol;
+  border-radius: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1rem;
+  margin-top: 10rem;
+}
+
+@mixin buttonStyles() {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 5%;
+  background-color: rgb(226, 226, 226);
+  color: $color-greybrick;
+}
+
+@mixin buttonStyles2() {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 5%;
+  border: 1px solid $color-matteBlack;
+  color: $color-matteBlack;
+}
