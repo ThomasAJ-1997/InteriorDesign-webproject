@@ -5,6 +5,7 @@
 @import "../scss/animation.scss";
 @import "../scss/opening.scss";
 @import "../scss/hamburgerMenu.scss";
+@import "../scss/mediaqueries.scss";
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,12 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+%fullSpace {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -49,6 +56,7 @@ nav {
 
 .heading-primary {
   @include primaryFontStyle(5rem, $color-verylight);
+  transition: all 0.3s ease-in-out;
 }
 
 .header-navbar {
@@ -92,6 +100,7 @@ nav {
 .header-text {
   @include secondaryFontStyle(12rem, $color-verylight);
   @include animationFeature(animationMoveUp);
+  transition: all 0.3s ease-in-out;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   width: 100vw;
   z-index: 4;

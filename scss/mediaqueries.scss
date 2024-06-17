@@ -1,0 +1,17 @@
+@media (max-width: 80.38em) {
+  .header-introduction .header-text {
+    @include secondaryFontStyle(8rem, $color-verylight);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 75em) {
+  .header-logo .heading-primary {
+    font-size: 3.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .social-media-imgs .social-media-img {
+    height: 17.5rem;
+  }
+}
