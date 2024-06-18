@@ -1,6 +1,12 @@
+@import "../scss/variables.scss";
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 @media (max-width: 80.38em) {
   .header-introduction .header-text {
-    @include secondaryFontStyle(8rem, $color-verylight);
+    @include secondaryFontStyle(7.5rem, $color-verylight);
     transition: all 0.3s ease-in-out;
   }
 }
@@ -13,5 +19,72 @@
 
   .social-media-imgs .social-media-img {
     height: 17.5rem;
+  }
+}
+
+@media (max-width: 67.56em) {
+  .header-navbar ul li a {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .about-description p {
+    max-width: 75vw;
+  }
+
+  .about-img {
+    max-height: 30vh;
+    max-width: 70vw;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .opening-video {
+    max-height: 60vh;
+    max-width: 75vw;
+    margin-top: -6.4rem;
+  }
+
+  .opening-video .video {
+    margin-top: -8.4rem;
+  }
+
+  .opening-button {
+    margin-top: -8.4rem;
+  }
+}
+
+@media (max-width: 65.81em) {
+  .social-media-imgs .social-media-img {
+    height: 14.5rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 61.87em) {
+  .social-media-imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 52em) {
+  .header-logo .heading-primary {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .about-description p {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 40.63em) {
+  .section-newsletter .textbox {
+    width: 25rem;
+  }
+
+  .section-newsletter .newsletter-text {
+    width: 60rem;
+    margin-top: 2.4rem;
   }
 }
