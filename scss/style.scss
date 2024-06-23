@@ -6,6 +6,8 @@
 @import "../scss/opening.scss";
 @import "../scss/hamburgerMenu.scss";
 @import "../scss/mediaqueries.scss";
+
+@import "../scss/about.scss";
 * {
   margin: 0;
   padding: 0;
@@ -32,9 +34,9 @@ html {
   grid-template-columns: repeat(6, 1fr);
 }
 
-.header {
-  background-color: $color-darkCharcol;
-}
+// .header {
+//   background-color: $color-darkCharcol;
+// }
 
 // HEADER & NAVBAR //
 .header-section {

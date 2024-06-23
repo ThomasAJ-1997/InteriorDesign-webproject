@@ -1,0 +1,118 @@
+@import "../scss/variables.scss";
+@import "../scss/animation.scss";
+@import "../scss/opening.scss";
+@import "../scss/hamburgerMenu.scss";
+@import "../scss/mediaqueries.scss";
+
+.header {
+  background-color: white;
+}
+
+//Nav BUG FIX
+.about-navigation-bar {
+  margin-top: -1rem;
+}
+
+.heading-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-page {
+  background-color: white;
+  width: 95vw;
+  height: 90vh;
+}
+
+.about-heading {
+  @include secondaryFontStyle(4rem, $color-darkCharcol);
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+}
+
+.about-text {
+  @include primaryFontStyle(2rem, $color-darkCharcol);
+  text-align: center;
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+}
+
+.about-page-img {
+  height: 60vh;
+  width: 95vw;
+  margin-top: 3.2rem;
+  margin-left: 3.2rem;
+  background-image: url("../img/Interior-design-jobs-salaries-AD-PRO-19_04_08_Mark_Cunningham_0511.webp");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-page-2 {
+  margin-top: -6.4rem;
+}
+
+.about-line {
+  width: 95vw;
+  border: 0.1px solid $color-darkCharcol;
+  opacity: 0.7;
+  margin-left: 3.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.about-description,
+.text-align-left {
+  text-align: left;
+}
+
+.team-heading {
+  @include secondaryFontStyle(4rem, $color-darkCharcol);
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+  text-align: center;
+}
+
+.team-desc {
+  @include primaryFontStyle(2rem, $color-darkCharcol);
+  margin-bottom: 2.4rem;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 70rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team-box {
+  background-color: $color-neutral;
+  // width: 45vw;
+  // margin-left: 3.2rem;
+  // padding: 8rem 8rem 8rem 8rem;
+  border: 2px solid $color-neutral;
+}
+
+.team-title {
+  @include secondaryFontStyle(2rem, $color-darkCharcol);
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+.team-box p {
+  @include secondaryFontStyle(1.2rem, $color-darkCharcol);
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.team-box img {
+  border: 2px solid $color-neutral;
+}
+
+.btn-about-page {
+  @include secondaryFontStyle(2rem, $color-darkCharcol);
+  // @include buttonStyles2;
+  text-align: center;
+  margin-top: 2.4rem;
+}

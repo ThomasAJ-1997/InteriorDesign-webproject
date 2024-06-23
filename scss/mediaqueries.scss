@@ -1,8 +1,8 @@
 @import "../scss/variables.scss";
 
-.grid--3--cols {
-  grid-template-columns: repeat(3, 1fr);
-}
+// .grid--3--cols {
+//   grid-template-columns: repeat(3, 1fr);
+// }
 
 @media (max-width: 80.38em) {
   .header-introduction .header-text {
@@ -86,5 +86,27 @@
   .section-newsletter .newsletter-text {
     width: 60rem;
     margin-top: 2.4rem;
+  }
+}
+
+/////////////////////////////////////////////
+
+// ABOUT-PAGE
+
+@media (max-width: 62.91em) {
+  .about-page-img {
+    max-height: 50vh;
+    text-align: center;
+    // display: none;
+  }
+}
+
+@media (max-width: 39.44em) {
+  .about-page-img {
+    max-height: 40vh;
+  }
+
+  .about-text-page {
+    width: 62.5%;
   }
 }
