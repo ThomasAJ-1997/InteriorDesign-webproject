@@ -122,20 +122,45 @@ accordianBox.forEach((item, index) => {
 });
 
 /////////////////////////////////////////////////
-// NEWSLETTER FORM
-const email = document.getElementById('emailID');
-const submit = document.getElementById('buttonID');
-const error = document.getElementById('errorID');
+// NEWSLETTER FORM // FIX ME
+// const email = document.getElementById('emailID');
+// const submit = document.getElementById('buttonID');
+// const error = document.getElementById('errorID');
 
-const showError = () => {
-  error.style.display = 'block';
-};
-//FIX ME
-submit.addEventListener('click', e => {
-  e.preventDefault();
-  if (!email.ariaValueMax.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
-    return showError();
+// const showError = () => {
+//   error.style.display = 'block';
+// };
+//
+// submit.addEventListener('click', e => {
+//   e.preventDefault();
+//   if (!email.ariaValueMax.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
+//     return showError();
+//   }
+//   console.log('success');
+//   window.prompt('Email added to newsletter');
+// });
+
+function emailValidation() {
+  const form = document.getElementById('form');
+  const email = document.getElementById('email').value;
+  const text = document.getElementById('text');
+  const button = document.getElementById('emailBtn');
+  const pattern = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
+
+  if (email.match(pattern)) {
+    form.classList.add('valid');
+    form.classList.remove('invalid');
+    text.innerHTML = 'Your Email address is Valid';
+    text.style.color = '#00ff00';
+
+    button.addEventListener('click', function () {
+      window.alert('Successfully signed up to our newsletter');
+      return;
+    });
+  } else {
+    form.classList.add('invalid');
+    form.classList.remove('valid');
+    text.innerHTML = 'Your Email address is Invalid';
+    text.style.color = '#ff0000';
   }
-  console.log('success');
-  window.prompt('Email added to newsletter');
-});
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sage & Hollows | Home</title>
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../img/istockphoto-1256364618-612x612.png" />
     <script
@@ -15,6 +16,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+
   </head>
   <body>
     <div class="navbar">
@@ -394,27 +397,24 @@
         </p>
       </div>
       <div class="newsletter-emailtext">
-        <form action="">
+        <form action="" id="form" onkeydown="emailValidation()">
           <input
-            type="email"
-            id="emailID"
+            type="text"
+            id="email"
             name="email"
             ng-model="email"
             placeholder="Email Address"
             class="textbox"
           />
 
-          <button
-            type="submit"
-            class="btn btn-newsletter btn-animated"
-            id="buttonID"
-            ng-click="submitted=true"
-          >
-            Submit
-          </button>
-          <p id="errorID" style="color: red; display: none">
-            Invalid Email Address
-          </p>
+          <input 
+          type="submit"
+          value="submit" 
+          id="emailBtn" 
+          class="btn btn-newsletter btn-animated">
+          <span id="text"></span>
+
+        
         </form>
       </div>
     </section>
