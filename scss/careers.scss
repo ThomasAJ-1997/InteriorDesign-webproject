@@ -1,0 +1,55 @@
+@import "../scss/variables.scss";
+@import "../scss/animation.scss";
+@import "../scss/opening.scss";
+@import "../scss/hamburgerMenu.scss";
+@import "../scss/mediaqueries.scss";
+
+.career-page {
+  background-color: white;
+  width: 95vw;
+  height: 90vh;
+}
+
+.career-heading {
+  @include secondaryFontStyle(4rem, $color-darkCharcol);
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+  text-align: center;
+}
+
+.career-text {
+  @include primaryFontStyle(2rem, $color-darkCharcol);
+  text-align: center;
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+  padding: 0rem 8rem 0rem 8rem;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-page-img {
+  height: 60vh;
+  width: 80vw;
+  margin-top: 3.2rem;
+  margin-left: 4.8rem;
+  background-image: url("../img/A5105-Career-Guide-Interior-design-Image-2.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.career-text-2 {
+  @include primaryFontStyle(1.5rem, $color-darkCharcol);
+  text-align: center;
+  margin-left: 3.2rem;
+}
+
+// Footer Fix
+.footer-copyright {
+  padding-bottom: 1rem;
+  background-color: $color-jetBlack;
+}

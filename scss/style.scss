@@ -1,13 +1,20 @@
+// EXTERNAL LINKS
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Sedan+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap");
 
+// FEATURE LINKS
 @import "../scss/variables.scss";
 @import "../scss/animation.scss";
 @import "../scss/opening.scss";
 @import "../scss/hamburgerMenu.scss";
 @import "../scss/mediaqueries.scss";
 
+// MAIN PAGE LINKS
 @import "../scss/about.scss";
+
+// SUB PAGE LINKS
+@import "../scss/careers.scss";
+
 * {
   margin: 0;
   padding: 0;

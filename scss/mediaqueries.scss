@@ -109,4 +109,47 @@
   .about-text-page {
     width: 62.5%;
   }
+
+  .about-story .about-text-page {
+    margin-left: 5rem;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+// CAREERS PAGE
+@media (max-width: 50.31em) {
+  // .career-two p {
+  //   margin-top: 6.4rem;
+  // }
+
+  .career-page-img {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 39.94em) {
+  .career-text p {
+    // margin-left: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .career-page-img {
+    max-height: 35vh;
+    max-width: 50vw;
+  }
+
+  .career-text .career-two p {
+    margin-top: 3.2rem;
+    padding-top: 3.2rem;
+  }
+
+  .career-jobs {
+    margin-right: 2rem;
+  }
+
+  .career-text-2 p {
+    margin-right: 2rem;
+  }
 }
