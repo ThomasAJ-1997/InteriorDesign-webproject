@@ -86,6 +86,11 @@ nav {
   margin-right: 20rem;
 }
 
+.navbar-navigation-left p {
+  color: $color-verylight;
+  font-size: 1.5rem;
+}
+
 .header-navbar ul {
   display: flex;
   gap: 6rem;
@@ -97,6 +102,7 @@ nav {
   text-decoration: none;
   font-size: 2rem;
   color: $color-verylight;
+  font-family: "Cinzel", serif;
 }
 
 .header-navbar a:hover {

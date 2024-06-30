@@ -1836,6 +1836,10 @@ nav {
   align-items: center;
   margin-right: 20rem; }
 
+.navbar-navigation-left p {
+  color: #fff2de;
+  font-size: 1.5rem; }
+
 .header-navbar ul {
   display: flex;
   gap: 6rem;
@@ -1845,7 +1849,8 @@ nav {
 .header-navbar a {
   text-decoration: none;
   font-size: 2rem;
-  color: #fff2de; }
+  color: #fff2de;
+  font-family: "Cinzel", serif; }
 
 .header-navbar a:hover {
   text-decoration: underline;
