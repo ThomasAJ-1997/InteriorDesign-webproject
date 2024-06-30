@@ -116,13 +116,10 @@
     text-align: center;
   }
 }
+///////////////////////////////////////////
 
 // CAREERS PAGE
 @media (max-width: 50.31em) {
-  // .career-two p {
-  //   margin-top: 6.4rem;
-  // }
-
   .career-page-img {
     max-height: 50vh;
   }
@@ -151,5 +148,27 @@
 
   .career-text-2 p {
     margin-right: 2rem;
+  }
+}
+/////////////////////////////////////
+// Privacy Policy
+
+@media (max-width: 47.31em) {
+  .privacy-text p {
+    max-width: 100%;
+    text-align: center;
+    margin-right: 3.5rem;
+  }
+
+  .privacy-text p i {
+    text-align: center;
+  }
+
+  // .privacy-text ul li {
+  //   text-align: center;
+  // }
+
+  .privacy-secondary-heading {
+    margin-right: 4.5rem;
   }
 }

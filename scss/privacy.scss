@@ -1,0 +1,47 @@
+@import "../scss/variables.scss";
+@import "../scss/animation.scss";
+@import "../scss/opening.scss";
+@import "../scss/hamburgerMenu.scss";
+@import "../scss/mediaqueries.scss";
+
+.privacy-page {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25rem 0 25rem;
+}
+
+.privacy-heading {
+  @include secondaryFontStyle(4rem, $color-darkCharcol);
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+  text-align: center;
+}
+
+.privacy-text {
+  @include primaryFontStyle(2rem, $color-darkCharcol);
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+}
+
+.privacy-line {
+  padding: 1px;
+  background-color: $color-darkCharcol;
+  opacity: 0.5;
+}
+
+.privacy-secondary-heading {
+  @include secondaryFontStyle(2.5rem, $color-darkCharcol);
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.privacy-text ul li {
+  list-style: none;
+}
+
+.privacy-text a {
+  color: $color-darkCharcol;
+}
