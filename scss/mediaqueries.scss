@@ -164,11 +164,37 @@
     text-align: center;
   }
 
-  // .privacy-text ul li {
-  //   text-align: center;
-  // }
-
   .privacy-secondary-heading {
     margin-right: 4.5rem;
+  }
+}
+
+///////////////////////////////////////
+/// Press Page
+
+@media screen and (max-width: 89.06em) {
+  .press-page {
+    margin-bottom: 65rem;
+  }
+  .press-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 9.4rem;
+  }
+
+  .box img {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 46.69em) {
+  .press-page {
+    margin-bottom: 240rem;
+  }
+  .press-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .box img {
+    width: 50rem;
+    margin-right: 9.2rem;
   }
 }

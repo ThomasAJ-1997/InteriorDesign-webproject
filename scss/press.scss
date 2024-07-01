@@ -1,0 +1,50 @@
+@import "../scss/variables.scss";
+@import "../scss/animation.scss";
+@import "../scss/opening.scss";
+@import "../scss/hamburgerMenu.scss";
+@import "../scss/mediaqueries.scss";
+
+.press-page {
+  background-color: white;
+  width: 95vw;
+  height: 100vh;
+  margin-bottom: 35rem;
+}
+
+.press-heading {
+  @include secondaryFontStyle(4rem, $color-darkCharcol);
+  margin-top: 6.4rem;
+  margin-left: 3.2rem;
+  text-align: center;
+}
+
+.press-secondary-heading {
+  @include primaryFontStyle(2rem, $color-darkCharcol);
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.press-secondary-heading a {
+  color: $color-darkCharcol;
+}
+
+.press-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-left: 9.6rem;
+  gap: 5px;
+}
+
+.box img {
+  width: 45rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.box img:hover {
+  transform: scale(110%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
