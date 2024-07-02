@@ -357,6 +357,10 @@
     margin-left: 5rem;
     width: 80%;
     text-align: center; } }
+@media (max-width: 39.81em) {
+  .service-secondary-text {
+    margin: -8rem;
+    margin-top: 1.2rem; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -766,6 +770,10 @@
     margin-left: 5rem;
     width: 80%;
     text-align: center; } }
+@media (max-width: 39.81em) {
+  .service-secondary-text {
+    margin: -8rem;
+    margin-top: 1.2rem; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -1297,6 +1305,10 @@
     margin-left: 5rem;
     width: 80%;
     text-align: center; } }
+@media (max-width: 39.81em) {
+  .service-secondary-text {
+    margin: -8rem;
+    margin-top: 1.2rem; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -1443,10 +1455,6 @@
   margin-top: 2.4rem;
   margin-bottom: 2.4rem; }
 
-@media (max-width: 39.81em) {
-  .service-secondary-text {
-    margin: -8rem;
-    margin-top: 1.2rem; } }
 @keyframes animationMoveUp {
   0% {
     opacity: 0;
@@ -1804,6 +1812,10 @@
     margin-left: 5rem;
     width: 80%;
     text-align: center; } }
+@media (max-width: 39.81em) {
+  .service-secondary-text {
+    margin: -8rem;
+    margin-top: 1.2rem; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -2268,6 +2280,10 @@
     margin-left: 5rem;
     width: 80%;
     text-align: center; } }
+@media (max-width: 39.81em) {
+  .service-secondary-text {
+    margin: -8rem;
+    margin-top: 1.2rem; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -2724,6 +2740,10 @@
     margin-left: 5rem;
     width: 80%;
     text-align: center; } }
+@media (max-width: 39.81em) {
+  .service-secondary-text {
+    margin: -8rem;
+    margin-top: 1.2rem; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
