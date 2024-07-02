@@ -1,0 +1,129 @@
+@media (max-width: 80.38em) {
+  .header-introduction .header-text {
+    font-size: 7.5rem;
+    color: #fff2de;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.3s ease-in-out; } }
+@media (max-width: 75em) {
+  .header-logo .heading-primary {
+    font-size: 3.5rem;
+    transition: all 0.3s ease-in-out; }
+
+  .social-media-imgs .social-media-img {
+    height: 17.5rem; } }
+@media (max-width: 67.56em) {
+  .header-navbar ul li a {
+    display: none;
+    transition: all 0.3s ease-in-out; }
+
+  .about-description p {
+    max-width: 75vw; }
+
+  .about-img {
+    max-height: 30vh;
+    max-width: 70vw;
+    transition: all 0.3s ease-in-out; }
+
+  .opening-video {
+    max-height: 60vh;
+    max-width: 75vw;
+    margin-top: -6.4rem; }
+
+  .opening-video .video {
+    margin-top: -8.4rem; }
+
+  .opening-button {
+    margin-top: -8.4rem; } }
+@media (max-width: 65.81em) {
+  .social-media-imgs .social-media-img {
+    height: 14.5rem;
+    width: 90%; } }
+@media (max-width: 61.87em) {
+  .social-media-imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 52em) {
+  .header-logo .heading-primary {
+    font-size: 2.5rem; } }
+@media (max-width: 43.75em) {
+  .about-description p {
+    width: 40rem; } }
+@media (max-width: 40.63em) {
+  .section-newsletter .textbox {
+    width: 25rem; }
+
+  .section-newsletter .newsletter-text {
+    width: 60rem;
+    margin-top: 2.4rem; } }
+@media (max-width: 62.91em) {
+  .about-page-img {
+    max-height: 50vh;
+    text-align: center; } }
+@media (max-width: 39.44em) {
+  .about-page-img {
+    max-height: 40vh; }
+
+  .about-text-page {
+    width: 62.5%; }
+
+  .about-story .about-text-page {
+    margin-left: 5rem;
+    width: 80%;
+    text-align: center; } }
+@media (max-width: 50.31em) {
+  .career-page-img {
+    max-height: 50vh; } }
+@media (max-width: 39.94em) {
+  .career-text p {
+    width: 100%;
+    text-align: center; }
+
+  .career-page-img {
+    max-height: 35vh;
+    max-width: 50vw; }
+
+  .career-text .career-two p {
+    margin-top: 3.2rem;
+    padding-top: 3.2rem; }
+
+  .career-jobs {
+    margin-right: 2rem; }
+
+  .career-text-2 p {
+    margin-right: 2rem; } }
+@media (max-width: 47.31em) {
+  .privacy-text p {
+    max-width: 100%;
+    text-align: center;
+    margin-right: 3.5rem; }
+
+  .privacy-text p i {
+    text-align: center; }
+
+  .privacy-secondary-heading {
+    margin-right: 4.5rem; } }
+@media screen and (max-width: 89.06em) {
+  .press-page {
+    margin-bottom: 65rem; }
+
+  .press-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 9.4rem; }
+
+  .box img {
+    width: 35rem; } }
+@media screen and (max-width: 46.69em) {
+  .press-page {
+    margin-bottom: 240rem; }
+
+  .press-wrapper {
+    grid-template-columns: 1fr; }
+
+  .box img {
+    width: 50rem;
+    margin-right: 9.2rem; } }
+
+/*# sourceMappingURL=mediaqueries.css.map */
