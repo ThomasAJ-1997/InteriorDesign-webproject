@@ -122,23 +122,6 @@ accordianBox.forEach((item, index) => {
 });
 
 /////////////////////////////////////////////////
-// NEWSLETTER FORM // FIX ME
-// const email = document.getElementById('emailID');
-// const submit = document.getElementById('buttonID');
-// const error = document.getElementById('errorID');
-
-// const showError = () => {
-//   error.style.display = 'block';
-// };
-//
-// submit.addEventListener('click', e => {
-//   e.preventDefault();
-//   if (!email.ariaValueMax.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
-//     return showError();
-//   }
-//   console.log('success');
-//   window.prompt('Email added to newsletter');
-// });
 
 function emailValidation() {
   const form = document.getElementById('form');

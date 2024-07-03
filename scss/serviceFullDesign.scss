@@ -1,0 +1,194 @@
+@import "../scss/variables.scss";
+@import "../scss/animation.scss";
+@import "../scss/opening.scss";
+@import "../scss/hamburgerMenu.scss";
+@import "../scss/mediaqueries.scss";
+
+.serviceFull-banner {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(128, 128, 128, 0.658),
+      rgba(76, 76, 76, 0.753)
+    ),
+    url("../img/pressIMG/LLI-Design-Studio-Blur-scaled.avif");
+  background-size: cover;
+  background-position: left;
+  transition: all 0.3s ease-in;
+  position: relative;
+  animation-fill-mode: backwards;
+}
+
+.serviceFull-banner-text {
+  position: absolute;
+  top: 50%;
+}
+
+.serviceFull-primary-text {
+  @include secondaryFontStyle(6.5rem, whitesmoke);
+  text-align: center;
+  margin-bottom: 2.4rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.serviceFull-secondary-text {
+  @include secondaryFontStyle(1.8rem, whitesmoke);
+  text-align: center;
+  padding: 2rem 12rem;
+}
+
+.servicePage-heading-primary {
+  @include secondaryFontStyle(4rem, $color-darkCharcol);
+  margin-top: 6.4rem;
+  text-align: center;
+}
+
+.servicePage-description {
+  @include primaryFontStyle(2rem, $color-darkCharcol);
+  margin-top: 2.4rem;
+  text-align: center;
+  padding: 0 8rem 0 8rem;
+}
+
+.sbt-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+
+.interior-features {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.4rem;
+}
+
+.interior-container {
+  width: 90%;
+  min-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interior-left {
+  width: 50%;
+  height: 60rem;
+  background: url("../img/pressIMG/interior_design.jpg") no-repeat center /
+    cover;
+  border-radius: 8px;
+}
+
+.interior-right {
+  width: 50%;
+  min-height: 40rem;
+  background-color: $color-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 8px;
+  color: white;
+  margin-left: -15rem;
+}
+
+.content h1 {
+  @include secondaryFontStyle(2.5rem, whitesmoke);
+  margin-bottom: 1.2rem;
+}
+
+.content p {
+  @include primaryFontStyle(1.5rem, whitesmoke);
+}
+
+.gap {
+  margin-bottom: 10rem;
+}
+
+.service-enquiry {
+  margin-top: 12.4rem;
+}
+
+.service-enquiry a {
+  @include secondaryFontStyle(2rem, $color-darkCharcol);
+  text-align: center;
+}
+
+/////////////////////////////////////////
+/// Service Virtual Design Page
+.serviceVirtual-banner {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(128, 128, 128, 0.658),
+      rgba(76, 76, 76, 0.753)
+    ),
+    url("../img/pressIMG/online-interior-designer-1320278037.webp");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in;
+  position: relative;
+  animation-fill-mode: backwards;
+}
+
+.interior-left-2 {
+  width: 50%;
+  height: 60rem;
+  background: url("../img/pressIMG/virtual-design-luxury-service-custom-styleberry-creative-online-luxury-interiors-satx.png")
+    no-repeat center / cover;
+  border-radius: 8px;
+}
+
+/////////////////////////////////////////
+/// Service Commerical Design Page
+.serviceCommercial-banner {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(128, 128, 128, 0.658),
+      rgba(76, 76, 76, 0.753)
+    ),
+    url("../img/pressIMG/Commercial-interior-designers-Theresa-G.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in;
+  position: relative;
+  animation-fill-mode: backwards;
+}
+
+.interior-left-3 {
+  width: 50%;
+  height: 60rem;
+  background: url("../img/pressIMG/4.jpg") no-repeat center / cover;
+  border-radius: 8px;
+}
+
+//////////////////////////////////////
+///  Service Concierge Design Page
+.serviceConcierge-banner {
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(128, 128, 128, 0.658),
+      rgba(76, 76, 76, 0.753)
+    ),
+    url("../img/pressIMG/Lori-Morris-Concierge-3.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in;
+  position: relative;
+  animation-fill-mode: backwards;
+}
+
+.interior-left-4 {
+  width: 50%;
+  height: 60rem;
+  background: url("../img/pressIMG/1718194820970.png") no-repeat center / cover;
+  border-radius: 8px;
+}
+
+//////////////////////////////////
+///

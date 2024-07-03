@@ -127,6 +127,27 @@
   }
 }
 
+@media only screen and (max-width: 48em) {
+  .interior-container {
+    flex-direction: column;
+  }
+
+  .interior-left {
+    width: 60%;
+  }
+
+  .interior-right {
+    width: 45%;
+    margin: 0;
+    margin-top: -15rem;
+    margin-bottom: 10rem;
+  }
+
+  .serviceFull-secondary-text {
+    padding: 2rem;
+  }
+}
+
 ///////////////////////////////////////////
 
 // CAREERS PAGE

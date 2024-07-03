@@ -58,17 +58,27 @@
       .left-img-1 {
         top: 40%;
         left: 20%;
+        transition: all 0.3s ease-in-out;
       }
 
       .left-img-2 {
         top: 50%;
         left: 30%;
+        transition: all 0.3s ease-in-out;
       }
 
       .left-img-3 {
         top: 60%;
         left: 40%;
+        transition: all 0.3s ease-in-out;
       }
+    }
+
+    .left-img-1:hover,
+    .left-img-2:hover,
+    .left-img-3:hover {
+      transform: scale(110%);
+      transition: all 0.3s ease-in-out;
     }
 
     &-right {
