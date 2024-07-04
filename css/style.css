@@ -345,10 +345,10 @@
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -400,21 +400,23 @@
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -812,10 +814,10 @@
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -867,21 +869,23 @@
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -1401,10 +1405,10 @@
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -1456,21 +1460,23 @@
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -1544,7 +1550,7 @@
   width: 40%;
   height: 60rem;
   border-radius: 8px;
-  margin-left: 3.2rem;
+  margin-left: 1.2rem;
   font-size: 1.5rem;
   color: #36454f;
   font-family: "Cinzel", serif;
@@ -1570,8 +1576,7 @@
   color: white; }
 
 .contact-form {
-  width: 90%;
-  min-width: 100rem;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -1630,21 +1635,21 @@ textarea {
   font-style: normal; }
 
 .textbox-name {
-  min-width: 40rem;
+  min-width: 20rem;
   padding: 1.2rem 2rem;
   margin: 0.8rem 0;
   box-sizing: border-box;
   border-radius: 8px; }
 
 .textbox-address {
-  min-width: 40rem;
+  min-width: 20rem;
   padding: 1.2rem 2rem;
   margin: 0.8rem 0;
   box-sizing: border-box;
   border-radius: 8px; }
 
 select {
-  min-width: 40rem;
+  min-width: 20rem;
   padding: 1.2rem 2rem;
   margin: 0.8rem 0;
   box-sizing: border-box;
@@ -1676,7 +1681,7 @@ textarea {
   margin-top: 1.2rem; }
 
 .services-block {
-  width: 40rem;
+  width: 25rem;
   margin-bottom: 3.2rem; }
 
 .container {
@@ -1685,7 +1690,7 @@ textarea {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1698,6 +1703,9 @@ textarea {
   cursor: pointer;
   height: 0;
   width: 0; }
+
+.container p {
+  font-size: 1.5rem; }
 
 /* Create a custom checkbox */
 .checkmark {
@@ -1740,6 +1748,9 @@ textarea {
 
 .contact-gap {
   margin-top: 3.2rem; }
+
+.footer-box {
+  margin-bottom: 1rem; }
 
 @keyframes animationMoveUp {
   0% {
@@ -2086,10 +2097,10 @@ textarea {
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -2141,21 +2152,23 @@ textarea {
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -2647,10 +2660,10 @@ textarea {
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -2702,21 +2715,23 @@ textarea {
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -3284,10 +3299,10 @@ textarea {
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -3339,21 +3354,23 @@ textarea {
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -3806,10 +3823,10 @@ textarea {
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -3861,21 +3878,23 @@ textarea {
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -4320,10 +4339,10 @@ textarea {
     width: 40rem; } }
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem; }
+    width: 22rem; }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem; } }
 @media (max-width: 62.91em) {
   .about-page-img {
@@ -4375,21 +4394,23 @@ textarea {
     font-style: normal; }
 
   .contact-right {
-    width: 40%;
-    margin-bottom: 3.2rem; }
+    width: 35%;
+    margin-bottom: 3.2rem;
+    margin-right: 10rem; }
 
   .name-block {
     display: flex;
     flex-direction: column; }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem; }
-
   .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column; } }
+    min-width: 20rem; }
+
+  .container {
+    font-size: 1.5rem;
+    color: #36454f;
+    font-family: "Sedan SC", serif;
+    font-weight: 500;
+    font-style: normal; } }
 @media (max-width: 50.31em) {
   .career-page-img {
     max-height: 50vh; } }
@@ -5011,7 +5032,7 @@ nav {
   margin-bottom: 3.2rem; }
 
 .textbox {
-  width: 50rem;
+  width: 45rem;
   padding: 2rem 2rem 2rem 2rem;
   opacity: 0.5;
   font-size: 2rem;

@@ -80,11 +80,11 @@
 
 @media (max-width: 40.63em) {
   .section-newsletter .textbox {
-    width: 25rem;
+    width: 22rem;
   }
 
   .section-newsletter .newsletter-text {
-    width: 60rem;
+    width: 50rem;
     margin-top: 2.4rem;
   }
 }
@@ -162,8 +162,9 @@
     @include secondaryFontStyle(1.75rem, $color-darkCharcol);
   }
   .contact-right {
-    width: 40%;
+    width: 35%;
     margin-bottom: 3.2rem;
+    margin-right: 10rem;
   }
 
   .name-block {
@@ -171,15 +172,12 @@
     flex-direction: column;
   }
 
-  form {
-    margin-right: 50rem;
-    padding-left: 5rem;
+  .form-newsletter {
+    min-width: 20rem;
   }
 
-  .form-newsletter {
-    margin-right: 8.4rem;
-    display: flex;
-    flex-direction: column;
+  .container {
+    @include primaryFontStyle(1.5rem, $color-darkCharcol);
   }
 }
 
