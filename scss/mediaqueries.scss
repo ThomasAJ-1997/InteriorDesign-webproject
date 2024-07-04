@@ -149,7 +149,41 @@
 }
 
 ///////////////////////////////////////////
+/// CONTACT PAGE
+@media screen and (max-width: 62.38em) {
+  .contact-features {
+    flex-direction: column;
+    justify-content: left;
+    margin-left: -25rem;
+    gap: 5rem;
+  }
 
+  .contact-left {
+    @include secondaryFontStyle(1.75rem, $color-darkCharcol);
+  }
+  .contact-right {
+    width: 40%;
+    margin-bottom: 3.2rem;
+  }
+
+  .name-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    margin-right: 50rem;
+    padding-left: 5rem;
+  }
+
+  .form-newsletter {
+    margin-right: 8.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//////////////////////////////////////////
 // CAREERS PAGE
 @media (max-width: 50.31em) {
   .career-page-img {
