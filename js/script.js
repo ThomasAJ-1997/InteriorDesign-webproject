@@ -42,6 +42,16 @@ function fadeOut() {
   textSecondary.textContent = 'Discover our vintage designs';
 }
 
+/////////////////////////////////////////////////////////////////
+// SMOOTH SCROLL
+const heroSection = document.querySelector('.btn-hero');
+const section1 = document.querySelector('#section--1');
+
+heroSection.addEventListener('click', function (e) {
+  const section1Coords = section1.getBoundingClientRect();
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 // TESTIMONIALS
